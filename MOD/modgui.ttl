@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://guitarix.sourceforge.net/plugins/gx_maestro_fz1b_#_maestro_fz1b_>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gxfz1b.html> ;
+        modgui:stylesheet <modgui/stylesheet-gxfz1b.css> ;
+        modgui:screenshot <modgui/screenshot-gxfz1b.png> ;
+        modgui:thumbnail <modgui/thumbnail-gxfz1b.png> ;
+        modgui:brand "Guitarix" ;
+        modgui:label "GxFz1b" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "fz1b" ;
+        modgui:knob "cairo" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "BALANCE" ;
+            lv2:name "BALANCE" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "VOLUME" ;
+            lv2:name "VOLUME" ;
+        ] ;
+    ] .
