@@ -151,6 +151,14 @@ static void gx_paint_box_destroy(GtkObject *object)
 		g_object_unref(paint_box->stock_image);
 	}
 	paint_box->stock_image = NULL;
+	if (G_IS_OBJECT(paint_box->gxf_image)) {
+		g_object_unref(paint_box->gxf_image);
+	}
+	paint_box->gxf_image = NULL;
+    if (G_IS_OBJECT(paint_box->stock2_image)) {
+		g_object_unref(paint_box->stock2_image);
+	}
+	paint_box->stock2_image = NULL;
 	GTK_OBJECT_CLASS(gx_paint_box_parent_class)->destroy(object);
 }
 
