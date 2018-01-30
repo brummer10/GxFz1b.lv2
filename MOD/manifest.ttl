@@ -23,4 +23,11 @@
 <http://guitarix.sourceforge.net/plugins/gx_maestro_fz1b_#_maestro_fz1b_>
     a lv2:Plugin ;
     lv2:binary <gx_maestro_fz1b.so>  ;
-    rdfs:seeAlso <gx_maestro_fz1b.ttl> .
+    rdfs:seeAlso <gx_maestro_fz1b.ttl> ,
+                 <modgui.ttl> .
+
+<default-preset>
+    a <http://lv2plug.in/ns/ext/presets#Preset> ;
+    <http://lv2plug.in/ns/lv2core#appliesTo> <http://guitarix.sourceforge.net/plugins/gx_maestro_fz1b_#_maestro_fz1b_> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Default" ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <default-preset.ttl> .
